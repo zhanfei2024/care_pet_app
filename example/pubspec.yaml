@@ -1,0 +1,176 @@
+name: sample
+description: Demonstrates how to use the fish_redux.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about versioning at semver.org.
+version: 1.0.0+1
+
+environment:
+    sdk: '>=2.0.0-dev.68.0 <3.0.0'
+
+dependencies:
+    fish_redux:
+        path: ../
+    flutter:
+        sdk: flutter
+    path_provider: ^1.5.1
+    dio: ^3.0.6
+    uuid: 2.0.4
+    mqtt_client: ^7.1.0
+    flutter_map:
+        git:
+            url: git://github.com/johnpryan/flutter_map.git
+            ref: c590ab12edbf5b6fce30b13a42e974c0abadd506
+    jpush_flutter:
+        git:
+            url: git://github.com/jpush/jpush-flutter-plugin.git
+            ref: 8c69e1041ec444773c57d742278daa32aa665c2a
+    location: ^3.0.2
+    flutter_compass: ^0.4.1
+    flutter_screenutil: ^2.2.0
+    flutter_svg: ^0.17.1
+    cookie_jar: ^1.0.0
+    dio_cookie_manager: ^1.0.0
+    oktoast: ^2.3.1
+    shared_preferences: ^0.5.6+3
+    image_picker: ^0.6.7+2
+    flutter_picker: ^1.1.0
+    cached_network_image: ^2.0.0-rc
+    barcode_scan: ^3.0.0
+    url_launcher: ^5.4.1
+    permission_handler: ^5.0.1+1
+    maps_launcher: ^1.2.0
+    connectivity: ^0.4.8+6
+    amap_location_fluttify: ^0.13.2
+    # amap_location_fluttify: ^0.13.2
+    flutter_reactive_ble: ^2.3.0
+
+
+
+dev_dependencies:
+    test: ^1.3.0
+    mockito: ^3.0.0
+    build_runner: ^1.6.5  #创建.g.dart
+    json_serializable: ^3.1.0  #序列化json
+    flutter_driver:
+        sdk: flutter
+    flutter_test:
+        sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://www.dartlang.org/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+    # The following line ensures that the Material Icons font is
+    # included with your application, so that you can use the icons in
+    # the Icons class.
+    uses-material-design: true
+    # To add assets to your application, add an assets section, like this:
+    assets:
+     - ca.crt
+     - client.crt
+     - client.key
+     - assets/images/cloud_upload.png
+     - assets/images/cat.png
+     - assets/images/bg.png
+     - assets/images/logo.png
+     - assets/images/valid_coupon.png
+     - assets/images/invalid_coupon.png
+     - assets/images/appbar_bg.jpg
+     - assets/images/free.jpg
+     - assets/images/iPhone-x.jpeg
+     - assets/images/iPhone.jpeg
+     - assets/images/shopcart.jpeg
+     - assets/images/shopping-pic.jpeg
+     - assets/images/shopping.jpeg
+     - assets/images/subject.png
+     - assets/images/winter.jpeg
+     - assets/svgs/favorite-24px.svg
+     - assets/svgs/account_balance_wallet-24px.svg
+     - assets/svgs/assignment-24px.svg
+     - assets/svgs/stars-24px.svg
+     - assets/svgs/headset-24px.svg
+     - assets/svgs/local_shipping-24px.svg
+     - assets/svgs/brightness_low-24px.svg
+     - assets/svgs/map-24px.svg
+     - assets/svgs/star_border-24px.svg
+     - assets/svgs/refresh-24px.svg
+     - assets/svgs/school-24px.svg
+     - assets/svgs/history-24px.svg
+     - assets/svgs/person-24px.svg
+     - assets/svgs/home-24px.svg
+     - assets/svgs/local_cafe-24px.svg
+     - assets/svgs/local_cafe_filled-24px.svg
+     - assets/svgs/school-24px.svg
+     - assets/svgs/mode_comment-24px.svg
+     - assets/svgs/chat_bubble-24px.svg
+     - assets/svgs/emoji_food_beverage-24px.svg
+     - assets/svgs/local_florist-24px.svg
+     - assets/svgs/card_giftcard-24px.svg
+     - assets/svgs/stars-filled-24px.svg
+     - assets/svgs/keyboard_arrow_right-24px.svg
+     - assets/svgs/textsms-24px.svg
+     - assets/svgs/visibility-24px.svg
+     - assets/svgs/visibility_off-24px.svg
+     - assets/svgs/radio_button_checked-24px.svg
+     - assets/svgs/radio_button_unchecked-24px.svg
+     - assets/svgs/delete_sweep-24px.svg
+     - assets/svgs/delete_sweep-24px.svg
+     - assets/svgs/create-24px.svg
+     - assets/svgs/question_answer-24px.svg
+     - assets/svgs/thumb_up-24px.svg
+     - assets/svgs/flag-24px.svg
+     - assets/svgs/delete-24px.svg
+     - assets/svgs/whatshot-24px.svg
+     - assets/svgs/check_circle-24px.svg
+     - assets/svgs/shopping_cart-24px.svg
+     - assets/svgs/remove_circle_outline-24px.svg
+     - assets/svgs/add_circle_outline-24px.svg
+     - assets/svgs/new_releases-24px.svg
+     - assets/svgs/contactless-24px.svg
+     - assets/svgs/where_to_vote-24px.svg
+     - assets/svgs/favorite_border-24px.svg
+     - assets/svgs/keyboard_arrow_left-24px.svg
+     - assets/svgs/clear-24px.svg
+     - assets/svgs/cancel-24px.svg
+     - assets/svgs/tag_faces-24px.svg
+     - assets/svgs/close-24px.svg
+     - assets/svgs/wexin.svg
+     - assets/svgs/icon-icon_yulan.svg
+     - assets/svgs/icon-miwen.svg
+     - assets/svgs/icon-guanbi.svg
+     - assets/svgs/icon-guanbi.svg
+     - assets/svgs/icon-yunduanshangchuan.svg
+     - assets/svgs/icon-icon_tianjia.svg
+     - assets/svgs/icon-mian.svg
+     - assets/svgs/icon-jiedianguanli.svg
+     - assets/svgs/icon-gongnengdingyi.svg
+     - assets/svgs/icon-icon_loading.svg
+    # An image asset can refer to one or more resolution-specific "variants", see
+    # https://flutter.io/assets-and-images/#resolution-aware.
+    # For details regarding adding assets from package dependencies, see
+    # https://flutter.io/assets-and-images/#from-packages
+    # To add custom fonts to your application, add a fonts section here,
+    # in this "flutter" section. Each entry in this list should have a
+    # "family" key with the font family name, and a "fonts" key with a
+    # list giving the asset and other descriptors for the font. For
+    # example:
+    # fonts:
+    #   - family: Schyler
+    #     fonts:
+    #       - asset: fonts/Schyler-Regular.ttf
+    #       - asset: fonts/Schyler-Italic.ttf
+    #         style: italic
+    #   - family: Trajan Pro
+    #     fonts:
+    #       - asset: fonts/TrajanPro.ttf
+    #       - asset: fonts/TrajanPro_Bold.ttf
+    #         weight: 700
+    #
+    # For details regarding fonts from package dependencies,
+    # see https://flutter.io/custom-fonts/#from-packages
